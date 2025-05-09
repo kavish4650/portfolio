@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    /* cursor: none; */
+}
+
+@font-face {
+    font-family: menu;
+    src: url(/Fontspring-DEMO-organetto-semiexpbold.otf);
+}
+
+@font-face {
+    font-family: font1;
+    src: url(/Fontspring-DEMO-organetto-extthin.otf);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+html {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.home-back {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.menu {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.close {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+}
+
+.menu button {
+    border: 0px black solid;
+    height: 42px;
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 32px;
+    transition: height 0.2s linear;
+    transition: width 0.2s linear;
+    letter-spacing: 1px;
+}
+
+.menu button:hover {
+    height: 48px;
+    width: 130px;
+    font-size: 17px;
+}
+
+.close button {
+    border: 0px black solid;
+    height: 42px;
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 32px;
+    transition: height 0.2s linear;
+    transition: width 0.2s linear;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.close button:hover {
+    height: 48px;
+    width: 130px;
+    font-size: 17px;
+}
+
+.menu-bar {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    font-family: "menu";
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: -2px;
+    padding-top: 10%;
+    z-index: 100;
+    position: absolute;
+    bottom: 100%;
+}
+
+#menu-contact {
+    color: rgb(209, 209, 209);
+    position: relative;
+}
+
+
+#menu-work {
+    transform: rotateX(0deg) skewX(0deg) translateX(0px);
+    transition: transform 0.2s 0.02s linear;
+    position: relative;
+}
+
+#menu-work-2 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    color: black;
+    transform: rotateX(-90deg);
+    transform-origin: 50% 50% 0px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s 0.02s linear;
+    transform: skewX(15deg)translateY(45px) rotateX(90deg) translateX(-20px);
+}
+
+.menu-workk {
+    height: 100%;
+    position: relative;
+    width: 55%;
+    margin: auto;
+}
+
+.menu-workk:hover #menu-work-2 {
+    transform: skewX(0deg)translateY(0px) rotateX(0deg) translateX(0px);
+    color: rgb(209, 209, 209);
+}
+
+.menu-workk:hover #menu-work {
+    transform: skewX(-32deg) translateY(-45px) translateX(0px) rotateX(90deg) translateX(5px);
+}
+
+
+#menu-about {
+    transform: rotateX(0deg) skewX(0deg) translateX(0px);
+    transition: transform 0.2s 0.02s linear;
+    position: relative;
+}
+
+#menu-about-2 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    color: black;
+    transform: rotateX(-90deg);
+    transform-origin: 50% 50% 0px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s 0.02s linear;
+    transform: skewX(15deg)translateY(45px) rotateX(90deg) translateX(-20px);
+}
+
+.menu-about {
+    height: 100%;
+    position: relative;
+    width: 55%;
+    margin: auto;
+}
+
+.menu-about:hover #menu-about-2 {
+    transform: skewX(0deg)translateY(0px) rotateX(0deg) translateX(0px);
+    color: rgb(209, 209, 209);
+}
+
+.menu-about:hover #menu-about {
+    transform: skewX(-32deg) translateY(-45px) translateX(0px) rotateX(90deg) translateX(5px);
+}
+
+#menu-home {
+    transform: rotateX(0deg) skewX(0deg) translateX(0px);
+    transition: transform 0.2s 0.02s linear;
+    position: relative;
+   
+
+}
+
+#menu-home-2 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    color: black;
+    transform: rotateX(-90deg);
+    transform-origin: 50% 50% 0px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s 0.02s linear;
+    transform: skewX(15deg)translateY(45px) rotateX(90deg) translateX(-20px);
+}
+
+.menu-home {
+    height: 100%;
+    position: relative;
+    width: 55%;
+    margin: auto;
+    
+}
+
+.menu-home h1{
+    text-decoration: none !important;
+}
+
+.menu-home:hover #menu-home-2 {
+    transform: skewX(0deg)translateY(0px) rotateX(0deg) translateX(0px);
+    color: rgb(209, 209, 209);
+}
+
+.menu-home:hover #menu-home {
+    transform: skewX(-32deg) translateY(-45px) translateX(0px) rotateX(90deg) translateX(5px);
+}
+
+
+.cont-main {
+    height: 100vh;
+    width: 100%;
+}
+
+.cont-back{
+    width:50%;
+    float: left;
+    text-align: center;
+    transform: rotateZ(-90deg);
+    height: 100%;
+    padding-top: 400px;
+    padding-left: 20px;
+}
+
+.cont-back h1{
+    color: white;
+    font-family: font1;
+    letter-spacing: 30px;
+
+}
+.form{
+    width:50%;
+    float: right;
+    text-align: center;
+    height: 100%;
+}
+
+.card{
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 10px -1px white;
+    border-radius: 30px;
+    margin-top: 120px;
+    overflow: hidden;
+    padding-top: 40px;
+    color: white;
+}
+.card h1{
+    font-family: menu;
+    color: white;
+    margin-bottom: 40px;
+}
+.card input{
+    margin-top: 40px;
+    height: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    text-align: center;
+    border-radius: 22px;
+    font-family: font2;
+    font-size: 20px;
+    background-color: white;
+    border: 0px solid white;
+    box-shadow: 0px 0px 10px -1px white;
+}
+textarea{
+    margin-top: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 22px;
+    font-family: font2;
+    font-size: 18px;
+    background-color: white;
+    border: 0px solid white;
+    box-shadow: 0px 0px 10px -1px white;
+    padding-top: 8PX;
+}
